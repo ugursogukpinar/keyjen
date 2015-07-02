@@ -1,3 +1,6 @@
 .idea/
 scripts/*.pyc
 scripts/__pycache__
+build/
+dist/
+keyjen.egg-info/

@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 import argparse
-from generator import Generator
+from .generator import Generator
 
 
 class Argument(object):

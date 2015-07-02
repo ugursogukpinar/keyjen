@@ -2,8 +2,8 @@
 # -*- coding:utf-8 -*-
 
 
-from argument import Argument
-from generator import Generator
+from .argument import Argument
+from .generator import Generator
 
 
 def main():
