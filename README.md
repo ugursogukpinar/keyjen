@@ -1,4 +1,4 @@
-####VHCreator
+####KeyJen
 
 KeyJen created to generate some keys or passwords quickly. You can define your char types to use,
 
