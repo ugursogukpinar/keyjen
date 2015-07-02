@@ -90,7 +90,6 @@ class Generator(object):
     def generate_key(self):
         """
         Ayarlanan karakter tiplerine göre bir adet key üretir.
-        :param length: Integer
         :return: String
         """
         key_str = self.prefix
