@@ -4,12 +4,12 @@
 import argparse
 from generator import Generator
 
-"""
-    Uç birimden verilen argümanları okumak için burdan faydanalacağız.
-"""
-
 
 class Argument(object):
+    """
+        We will catch command line arguments here.
+    """
+
     def __init__(self):
         parser = argparse.ArgumentParser()
         parser.add_argument('-l', '--length', help="Key Length", default=8)
