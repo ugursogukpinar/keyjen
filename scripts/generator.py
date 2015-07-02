@@ -56,7 +56,8 @@ class Generator(object):
         for i in range(self.count):
             self.generated_keys.append(self.generate_key())
 
-        print(self.generated_keys)
+        for key in self.generated_keys:
+            print(key)
 
     def prepare_types(self):
         """
