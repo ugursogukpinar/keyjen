@@ -56,9 +56,6 @@ class Generator(object):
         for i in range(self.count):
             self.generated_keys.append(self.generate_key())
 
-        for key in self.generated_keys:
-            print(key)
-
     def prepare_types(self):
         """
         :return: void
@@ -103,3 +100,7 @@ class Generator(object):
 
         key_str += self.suffix
         return key_str
+
+    def print_keys(self):
+        for key in self.generated_keys:
+            print(key)

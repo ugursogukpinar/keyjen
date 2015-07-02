@@ -8,9 +8,8 @@ from generator import Generator
 
 def main():
     args = Argument().args
-    print(args)
     generator = Generator(args.length, args.types.split(','), args.count, prefix=args.prefix, suffix=args.suffix)
-
+    generator.print_keys()
 
 if __name__ == "__main__":
     main()
