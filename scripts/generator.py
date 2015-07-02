@@ -57,6 +57,7 @@ class Generator(object):
             self.generated_keys.append(self.generate_key())
 
         print(self.generated_keys)
+
     def prepare_types(self):
         """
         :return: void
