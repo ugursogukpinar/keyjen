@@ -13,16 +13,18 @@ import random
 
 
 class Generator(object):
-    VERSION = '0.1.2'  # Versiyon bilgilendirmelerini buradan çekerek yapacağız.
+    VERSION = '0.2.0'  # Versiyon bilgilendirmelerini buradan çekerek yapacağız.
 
     __uppers = ['A', 'B', 'C', 'D', 'E', 'F', 'Z', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'V', 'X']
     __digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     __lowers = [letter.lower() for letter in __uppers]
+    __alphanumeric = ['!', '@', '.']
 
     __chars = {
         'upper': __uppers,
         'digit': __digits,
         'lower': __lowers,
+        'alpha': __alphanumeric
     }
 
     def __init__(self, length, types, count, **kwargs):
@@ -61,7 +63,7 @@ class Generator(object):
         :return: void
         :raises: TypeError
         """
-        types_can_be = ('lower', 'upper', 'digit', 'all')
+        types_can_be = ('lower', 'upper', 'digit', 'alpha', 'all')
 
         if not all(v in types_can_be for v in self.types):
             raise TypeError(u"Unexpected type value")
