@@ -1,34 +1,28 @@
-===========
-VHCreator
-===========
+####KeyJen
 
-VHCreator created to manage virtual hosts. For now you can add virtual host with one simply act like:
+KeyJen created to generate some keys or passwords quickly. You can define your char types to use,
 
-    $vhcreator <servername> <directory> -ho -cf /etc/apache2/sites-available/000-default.conf
+    $ keyjen -l 12 -c 5 --types upper,lower --prefix pre_ --suffix _suf
 
-Options
-=========
-In addition , you can use this options.
+####Installation
 
-* -h HELP
-
-* -cf This define your server virtual hosts configuration file path
-  to add virtual host. In first use you have to define it then it will be used
-  on other sessions.
-* -ho With this option , you can add given <servername> to operating system hosts file
-      automaticaly.
-
-* -r Git repository url to clone given directory
-* -f Foldername define which folder will use on cloning.
-
-In future
--------------
-1. Added hosts could be deleted with given alias.
-
-2. User can clone a git repository to given directory.
+```
+$ [sudo] pip install keyjen
+```
 
 
-Contributors
--------------
+####Options
 
-1. Uğur Soğukpınar
+- -h HELP
+
+- -l, --length You can define length of your key with this option.
+
+- -c, --count Number of keys.
+
+- -t, --types It defines char types. For example you can use uppercase and lowercase letters. There is four choices as all,upper,lower,digit
+
+- -p, --prefix You can define a prefix for your keys.
+
+- -s, --suffix You can define a suffix four your keys.
+
+- -v, --version It shows version of keyjen.
